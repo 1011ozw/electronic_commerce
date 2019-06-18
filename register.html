@@ -1042,11 +1042,11 @@
 		
 		<div class="row">
 			<div id="content" class="col-sm-12">
-				<h2 class="title">Register Account</h2>
-				<p>If you already have an account with us, please login at the <a href="#">login page</a>.</p>
+				<h2 class="title">注册您的摸仙宝账号</h2>
+				<p>如果您已经有了摸仙宝账号，请直接<a href="#">登录</a>.</p>
 				<form action="" method="post" enctype="multipart/form-data" class="form-horizontal account-register clearfix">
 					<fieldset id="account">
-						<legend>Your Personal Details</legend>
+						<legend>您的个人信息</legend>
 						<div class="form-group required" style="display: none;">
 							<label class="col-sm-2 control-label">Customer Group</label>
 							<div class="col-sm-10">
@@ -1058,130 +1058,85 @@
 							</div>
 						</div>
 						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-firstname">First Name</label>
+							<label class="col-sm-2 control-label" for="input-name">名字</label>
 							<div class="col-sm-10">
-								<input type="text" name="firstname" value="" placeholder="First Name" id="input-firstname" class="form-control">
-							</div>
-						</div>
-						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-lastname">Last Name</label>
-							<div class="col-sm-10">
-								<input type="text" name="lastname" value="" placeholder="Last Name" id="input-lastname" class="form-control">
+								<input type="text" name="name" value="" id="input-name" class="form-control">
 							</div>
 						</div>
 						<div class="form-group required">
 							<label class="col-sm-2 control-label" for="input-email">E-Mail</label>
 							<div class="col-sm-10">
-								<input type="email" name="email" value="" placeholder="E-Mail" id="input-email" class="form-control">
+								<input type="email" name="email" value="" id="input-email" class="form-control">
 							</div>
 						</div>
 						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-telephone">Telephone</label>
+							<label class="col-sm-2 control-label" for="input-telephone">电话</label>
 							<div class="col-sm-10">
-								<input type="tel" name="telephone" value="" placeholder="Telephone" id="input-telephone" class="form-control">
+								<input type="tel" name="telephone" value="" id="input-telephone" class="form-control">
 							</div>
 						</div>
-						<div class="form-group">
-							<label class="col-sm-2 control-label" for="input-fax">Fax</label>
-							<div class="col-sm-10">
-								<input type="text" name="fax" value="" placeholder="Fax" id="input-fax" class="form-control">
-							</div>
-						</div>
+
 					</fieldset>
 					<fieldset id="address">
-						<legend>Your Address</legend>
+						<legend>您的地址</legend>
 						<div class="form-group">
-							<label class="col-sm-2 control-label" for="input-company">Company</label>
+							<label class="col-sm-2 control-label" for="input-company">公司</label>
 							<div class="col-sm-10">
-								<input type="text" name="company" value="" placeholder="Company" id="input-company" class="form-control">
+								<input type="text" name="company" value=""  id="input-company" class="form-control">
 							</div>
 						</div>
 						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-address-1">Address 1</label>
+							<label class="col-sm-2 control-label" for="input-address-1">地址1</label>
 							<div class="col-sm-10">
-								<input type="text" name="address_1" value="" placeholder="Address 1" id="input-address-1" class="form-control">
+								<input type="text" name="address_1" value=""  id="input-address-1" class="form-control">
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="col-sm-2 control-label" for="input-address-2">Address 2</label>
+							<label class="col-sm-2 control-label" for="input-address-2">地址2</label>
 							<div class="col-sm-10">
-								<input type="text" name="address_2" value="" placeholder="Address 2" id="input-address-2" class="form-control">
+								<input type="text" name="address_2" value="" id="input-address-2" class="form-control">
 							</div>
 						</div>
 						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-city">City</label>
+							<label class="col-sm-2 control-label" for="input-postcode">邮编</label>
 							<div class="col-sm-10">
-								<input type="text" name="city" value="" placeholder="City" id="input-city" class="form-control">
-							</div>
-						</div>
-						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-postcode">Post Code</label>
-							<div class="col-sm-10">
-								<input type="text" name="postcode" value="" placeholder="Post Code" id="input-postcode" class="form-control">
-							</div>
-						</div>
-						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-country">Country</label>
-							<div class="col-sm-10">
-								<select name="country_id" id="input-country" class="form-control">
-									<option value=""> --- Please Select --- </option>
-									<option value="244">Aaland Islands</option>
-									<option value="1">Afghanistan</option>
-									<option value="2">Albania</option>
-									<option value="3">Algeria</option>
-									<option value="4">American Samoa</option>
-									<option value="5">Andorra</option>
-									<option value="6">Angola</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-zone">Region / State</label>
-							<div class="col-sm-10">
-								<select name="zone_id" id="input-zone" class="form-control">
-									<option value=""> --- Please Select --- </option>
-									<option value="3513">Aberdeen</option>
-									<option value="3514">Aberdeenshire</option>
-									<option value="3515">Anglesey</option>
-									<option value="3516">Angus</option>
-								  
-								</select>
+								<input type="text" name="postcode" value=""  id="input-postcode" class="form-control">
 							</div>
 						</div>
 					</fieldset>
 					<fieldset>
-						<legend>Your Password</legend>
+						<legend>您的密码</legend>
 						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-password">Password</label>
+							<label class="col-sm-2 control-label" for="input-password">密码</label>
 							<div class="col-sm-10">
-								<input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control">
+								<input type="password" name="password" value="" id="input-password" class="form-control">
 							</div>
 						</div>
 						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-confirm">Password Confirm</label>
+							<label class="col-sm-2 control-label" for="input-confirm">确认密码</label>
 							<div class="col-sm-10">
-								<input type="password" name="confirm" value="" placeholder="Password Confirm" id="input-confirm" class="form-control">
+								<input type="password" name="confirm" value="" id="input-confirm" class="form-control">
 							</div>
 						</div>
 					</fieldset>
 					<fieldset>
-						<legend>Newsletter</legend>
+						<legend>推送信息</legend>
 						<div class="form-group">
-							<label class="col-sm-2 control-label">Subscribe</label>
+							<label class="col-sm-2 control-label">订阅</label>
 							<div class="col-sm-10">
 								<label class="radio-inline">
-									<input type="radio" name="newsletter" value="1"> Yes
+									<input type="radio" name="newsletter" value="1"> 是
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="newsletter" value="0" checked="checked"> No
+									<input type="radio" name="newsletter" value="0" checked="checked"> 否
 								</label>
 							</div>
 						</div>
 					</fieldset>
 					<div class="buttons">
-						<div class="pull-right">I have read and agree to the <a href="#" class="agree"><b>Pricing Tables</b></a>
+						<div class="pull-right">我已经阅读并同意 <a href="#" class="agree"><b>定价条款</b></a>
 							<input class="box-checkbox" type="checkbox" name="agree" value="1"> &nbsp;
-							<input type="submit" value="Continue" class="btn btn-primary">
+							<input type="submit" value="继续" class="btn btn-primary">
 						</div>
 					</div>
 				</form>
