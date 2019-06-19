@@ -1036,8 +1036,8 @@
 	<div class="main-container container">
 		<ul class="breadcrumb">
 			<li><a href="#"><i class="fa fa-home"></i></a></li>
-			<li><a href="#">Account</a></li>
-			<li><a href="#">Login</a></li>
+			<li><a href="#">我的账户</a></li>
+			<li><a href="#">登录</a></li>
 		</ul>
 		
 		<div class="row">
@@ -1046,23 +1046,35 @@
 				
 					<div class="account-border">
 						<div class="row">
-							<div class="col-sm-6 new-customer">
-								<div class="well">
-									<h2><i class="fa fa-file-o" aria-hidden="true"></i>新顾客 </h2>
-									<p>通过创建一个帐户，您将能够更快地购物，了解订单的最新状态，并跟踪您以前的订单。</p>
-								</div>
-								<div class="bottom-form">
-									<a href="#" class="btn btn-default pull-right">继续</a>
-								</div>
-							</div>
+
+                            <form action="#" method="post" enctype="multipart/form-data">
+                                <div class="col-sm-6 customer-login">
+                                    <div class="well">
+                                        <h2>管理员</h2>
+                                        <p><strong>我是一个管理员</strong></p>
+                                        <div class="form-group">
+                                            <label class="control-label " for="input-email">账号</label>
+                                            <input type="text" name="email" value="" id="input-email" class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label " for="input-password">密码</label>
+                                            <input type="password" name="password" value="" id="input-password" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="bottom-form">
+                                        <b>抱歉！管理员无法注册</b>
+                                        <input type="submit" value="登录" class="btn btn-default pull-right" />
+                                    </div>
+                                </div>
+                            </form>
 							
 							<form action="#" method="post" enctype="multipart/form-data">
 								<div class="col-sm-6 customer-login">
 									<div class="well">
-										<h2><i class="fa fa-file-text-o" aria-hidden="true"></i> 老顾客</h2>
+										<h2>老顾客</h2>
 										<p><strong>我是一个老客户</strong></p>
 										<div class="form-group">
-											<label class="control-label " for="input-email">E-Mail 地址</label>
+											<label class="control-label " for="input-email">账号</label>
 											<input type="text" name="email" value="" id="input-email" class="form-control" />
 										</div>
 										<div class="form-group">
@@ -1071,11 +1083,55 @@
 										</div>
 									</div>
 									<div class="bottom-form">
-										<a href="#" class="forgot">忘记密码</a>
+										<a href="register.html" class="forgot">没有账号？点击这里前往注册</a>
 										<input type="submit" value="登录" class="btn btn-default pull-right" />
 									</div>
 								</div>
 							</form>
+
+                            <form action="#" method="post" enctype="multipart/form-data">
+                                <div class="col-sm-6 customer-login">
+                                    <div class="well">
+                                        <h2>商店卖家</h2>
+                                        <p><strong>我是一个商店卖家</strong></p>
+                                        <div class="form-group">
+                                            <label class="control-label " for="input-email">账号</label>
+                                            <input type="text" name="email" value="" id="input-email" class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label " for="input-password">密码</label>
+                                            <input type="password" name="password" value="" id="input-password" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="bottom-form">
+                                        <a href="register.html" class="forgot">没有账号？点击这里前往注册</a>
+                                        <input type="submit" value="登录" class="btn btn-default pull-right" />
+                                    </div>
+                                </div>
+                            </form>
+
+                            <form action="#" method="post" enctype="multipart/form-data">
+                                <div class="col-sm-6 customer-login">
+                                    <div class="well">
+                                        <h2>供应商</h2>
+                                        <p><strong>我是一个供应商</strong></p>
+                                        <div class="form-group">
+                                            <label class="control-label " for="input-email">账号</label>
+                                            <input type="text" name="email" value="" id="input-email" class="form-control" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label " for="input-password">密码</label>
+                                            <input type="password" name="password" value="" id="input-password" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="bottom-form">
+                                        <a href="register.html" class="forgot">没有账号？点击这里前往注册</a>
+                                        <input type="submit" value="登录" class="btn btn-default pull-right" />
+                                    </div>
+                                </div>
+                            </form>
+
+
 						</div>
 					</div>
 					

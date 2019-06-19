@@ -1036,14 +1036,14 @@
 	<div class="main-container container">
 		<ul class="breadcrumb">
 			<li><a href="#"><i class="fa fa-home"></i></a></li>
-			<li><a href="#">Account</a></li>
-			<li><a href="#">Register</a></li>
+			<li><a href="#">我的账户</a></li>
+			<li><a href="#">注册</a></li>
 		</ul>
 		
 		<div class="row">
 			<div id="content" class="col-sm-12">
 				<h2 class="title">注册您的摸仙宝账号</h2>
-				<p>如果您已经有了摸仙宝账号，请直接<a href="#">登录</a>.</p>
+				<p>如果您已经有了摸仙宝账号，请直接<a href="login.html">登录</a>.</p>
 				<form action="" method="post" enctype="multipart/form-data" class="form-horizontal account-register clearfix">
 					<fieldset id="account">
 						<legend>您的个人信息</legend>
@@ -1064,13 +1064,13 @@
 							</div>
 						</div>
 						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-email">E-Mail</label>
+							<label class="col-sm-2 control-label" for="input-email">电话(做为你的账号)</label>
 							<div class="col-sm-10">
 								<input type="email" name="email" value="" id="input-email" class="form-control">
 							</div>
 						</div>
 						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-telephone">电话</label>
+							<label class="col-sm-2 control-label" for="input-telephone">E-mail</label>
 							<div class="col-sm-10">
 								<input type="tel" name="telephone" value="" id="input-telephone" class="form-control">
 							</div>
@@ -1079,26 +1079,26 @@
 					</fieldset>
 					<fieldset id="address">
 						<legend>您的地址</legend>
-						<div class="form-group">
-							<label class="col-sm-2 control-label" for="input-company">公司</label>
+						<div class="form-group required">
+							<label class="col-sm-2 control-label" for="input-company">省/直辖市</label>
 							<div class="col-sm-10">
 								<input type="text" name="company" value=""  id="input-company" class="form-control">
 							</div>
 						</div>
 						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-address-1">地址1</label>
+							<label class="col-sm-2 control-label" for="input-address-1">市/直辖市</label>
 							<div class="col-sm-10">
 								<input type="text" name="address_1" value=""  id="input-address-1" class="form-control">
 							</div>
 						</div>
-						<div class="form-group">
-							<label class="col-sm-2 control-label" for="input-address-2">地址2</label>
+						<div class="form-group required">
+							<label class="col-sm-2 control-label" for="input-address-2">区县</label>
 							<div class="col-sm-10">
 								<input type="text" name="address_2" value="" id="input-address-2" class="form-control">
 							</div>
 						</div>
 						<div class="form-group required">
-							<label class="col-sm-2 control-label" for="input-postcode">邮编</label>
+							<label class="col-sm-2 control-label" for="input-postcode">详细地址</label>
 							<div class="col-sm-10">
 								<input type="text" name="postcode" value=""  id="input-postcode" class="form-control">
 							</div>
@@ -1120,16 +1120,19 @@
 						</div>
 					</fieldset>
 					<fieldset>
-						<legend>推送信息</legend>
-						<div class="form-group">
-							<label class="col-sm-2 control-label">订阅</label>
+						<legend>您的角色</legend>
+						<div class="form-group required">
+							<label class="col-sm-2 control-label">角色</label>
 							<div class="col-sm-10">
 								<label class="radio-inline">
-									<input type="radio" name="newsletter" value="1"> 是
+									<input type="radio" name="newsletter" value="0" checked="checked"> 普通用户
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="newsletter" value="0" checked="checked"> 否
+									<input type="radio" name="newsletter" value="1"> 商店卖家
 								</label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="newsletter" value="2"> 供应商
+                                </label>
 							</div>
 						</div>
 					</fieldset>
