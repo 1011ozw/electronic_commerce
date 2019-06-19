@@ -26,15 +26,15 @@ document.getElementById("storage2").innerText=storage1;
 }
 function out1(){
 var put=document.getElementById("reset1").value;
-if(Number(storage1)<Number(put)){
+if(Number(storage1)>=Number(put)){
 storage1=Number(storage1)-Number(put);
 document.getElementById("storage1").innerText=storage1;}
 else
 alert("您的库存不足，不能出库这么多数量！");
 }
 function out2(){
-if(Number(storage1)<Number(put)){
 var put=document.getElementById("reset3").value;
+if(Number(storage1)>=Number(put)){
 storage1=Number(storage2)-Number(put);
 document.getElementById("storage2").innerText=storage1;}
 else
