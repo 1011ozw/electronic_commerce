@@ -1034,6 +1034,61 @@
 
     <!-- Main Container  -->
     <div class="main-container container">
+        <div id="content" class="col-sm-12">
+            <h2 class="title">仓库库存</h2>
+            <div class="table-responsive form-group">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <td class="text-center">图片</td>
+                        <td class="text-left">商品名</td>
+                        <td class="text-left">型号</td>
+                        <td class="text-left">出库数量</td>
+                        <td class="text-right">入库数量</td>
+                        <td class="text-right">库存数量</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="text-center"><a href="product.html"><img width="70px" src="image/catalog/demo/product/fashion/8.jpg" alt="Aspire Ultrabook Laptop" title="Aspire Ultrabook Laptop" class="img-thumbnail" /></a></td>
+                        <td class="text-left"><a href="product.html">红鞋</a><br />
+                        </td>
+                        <td class="text-left">Pt 001</td>
+                        <td class="text-left" width="200px"><div class="input-group btn-block quantity">
+                            <input  id="reset1" type="text" name="quantity" value="0" size="1" class="form-control" />
+                            <span class="input-group-btn">
+                        <button  type="button" data-toggle="tooltip" title="Update" class="btn btn-primary" onclick="out1()"><i class="fa fa-clone"></i></button>
+                        <button  type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick="supplier_reset1()"><i class="fa fa-times-circle"></i></button>
+                        </span></div></td>
+                        <td class="text-left" width="200px"><div class="input-group btn-block quantity">
+                            <input id="reset2" type="text" name="quantity" value="0" size="1" class="form-control" />
+                            <span class="input-group-btn">
+                        <button type="button" data-toggle="tooltip" title="Update" class="btn btn-primary" onclick="in1()"><i class="fa fa-clone"></i></button>
+                        <button type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick="supplier_reset2()"><i class="fa fa-times-circle"></i></button>
+                        </span></div></td>
+                        <td id="storage1" class="text-right"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center"><a href="product.html"><img width="70px" src="image/catalog/demo/product/fashion/10.jpg" alt="Xitefun Causal Wear Fancy Shoes" title="Xitefun Causal Wear Fancy Shoes" class="img-thumbnail" /></a></td>
+                        <td class="text-left"><a href="product.html">水钻鞋</a></td>
+                        <td class="text-left">Pt 002</td>
+                        <td class="text-left" width="200px"><div class="input-group btn-block quantity">
+                            <input id="reset3" type="text" name="quantity" value="0" size="1" class="form-control" />
+                            <span class="input-group-btn">
+                        <button type="button" data-toggle="tooltip" title="Update" class="btn btn-primary" onclick="out2()"><i class="fa fa-clone"></i></button>
+                        <button type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick="supplier_reset3()"><i class="fa fa-times-circle"></i></button>
+                        </span></div></td>
+                        <td class="text-left" width="200px"><div class="input-group btn-block quantity">
+                            <input id="reset4" type="text" name="quantity" value="0" size="1" class="form-control" />
+                            <span class="input-group-btn">
+                        <button type="button" data-toggle="tooltip" title="Update" class="btn btn-primary" onclick="in2()"><i class="fa fa-clone"></i></button>
+                        <button type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick="supplier_reset4()"><i class="fa fa-times-circle"></i></button>
+                        </span></div></td>
+                        <td id="storage2" class="text-right"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
 
     </div>
     <!-- //Main Container -->
@@ -1276,6 +1331,7 @@
 <script type="text/javascript" src="js/datetimepicker/moment.js"></script>
 <script type="text/javascript" src="js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/self_js/supplier.js"></script>
 
 
 <!-- Theme files
@@ -1287,6 +1343,6 @@
 <script type="text/javascript" src="js/themejs/application.js"></script>
 
 
-
+</div>
 </body>
 </html>
