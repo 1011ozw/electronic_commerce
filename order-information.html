@@ -1035,51 +1035,52 @@
 	<!-- Main Container  -->
 	<div class="main-container container">
 		<ul class="breadcrumb">
-			<li><a href="#"><i class="fa fa-home"></i></a></li>
-			<li><a href="#">Order Infomation</a></li>
+			<li><a href="index.html"><i class="fa fa-home"></i></a></li>
+            <li><a href="order-history.html">订单跟踪</a></li>
+			<li><a href="order-information.html">订单详情</a></li>
 		</ul>
 		
 		<div class="row">
 			<!--Middle Part Start-->
-			<div id="content" class="col-sm-9">
-				<h2 class="title">Order Information</h2>
+			<div id="content" class="col-sm-12">
+				<h2 class="title">您的订单</h2>
 
 				<table class="table table-bordered table-hover">
 					<thead>
 						<tr>
-							<td colspan="2" class="text-left">Order Details</td>
+							<td colspan="2" class="text-left">详情</td>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td style="width: 50%;" class="text-left"> <b>Order ID:</b> #214521
+							<td style="width: 50%;" class="text-left"> <b>订单号：</b>100010001001
 								<br>
-								<b>Date Added:</b> 20/06/2016</td>
-							<td style="width: 50%;" class="text-left"> <b>Payment Method:</b> Cash On Delivery
+								<b>日期：</b>2019.6.18</td>
+							<td style="width: 50%;" class="text-left"> <b>支付方式：</b>支付宝
 								<br>
-								<b>Shipping Method:</b> Flat Shipping Rate </td>
+								<b>快递公司：</b>顺丰</td>
 						</tr>
 					</tbody>
 				</table>
 				<table class="table table-bordered table-hover">
 					<thead>
 						<tr>
-							<td style="width: 50%; vertical-align: top;" class="text-left">Payment Address</td>
-							<td style="width: 50%; vertical-align: top;" class="text-left">Shipping Address</td>
+							<td style="width: 50%; vertical-align: top;" class="text-left">发出信息</td>
+							<td style="width: 50%; vertical-align: top;" class="text-left">目的信息</td>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td class="text-left">Jhone Cary
-								<br>Central Square
-								<br>22 Hoi Wing Road
-								<br>New Delhi
-								<br>India</td>
-							<td class="text-left">Jhone Cary
-								<br>Central Square
-								<br>22 Hoi Wing Road
-								<br>New Delhi
-								<br>India</td>
+							<td class="text-left">董涛
+                                <br>上海市
+                                <br>奉贤区
+								<br>华东理工大学奉贤校区
+								<br>13761032710</td>
+							<td class="text-left">欧子文
+								<br>上海市
+								<br>徐汇区
+								<br>华东理工大学徐汇校区
+								<br>18021068918</td>
 						</tr>
 					</tbody>
 				</table>
@@ -1087,23 +1088,23 @@
 					<table class="table table-bordered table-hover">
 						<thead>
 							<tr>
-								<td class="text-left">Product Name</td>
-								<td class="text-left">Model</td>
-								<td class="text-right">Quantity</td>
-								<td class="text-right">Price</td>
-								<td class="text-right">Total</td>
+								<td class="text-left">商品名</td>
+								<td class="text-left">型号</td>
+								<td class="text-right">数量</td>
+								<td class="text-right">价格类型</td>
+								<td class="text-right">总金额</td>
 								<td style="width: 20px;"></td>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td class="text-left">iPhone5 </td>
-								<td class="text-left">product 11</td>
+								<td class="text-left">秋季必备女式橄榄绿衬衣</td>
+								<td class="text-left">XXL</td>
 								<td class="text-right">1</td>
-								<td class="text-right">$123.20</td>
-								<td class="text-right">$123.20</td>
-								<td style="white-space: nowrap;" class="text-right"> <a class="btn btn-primary" title="" data-toggle="tooltip" href="#" data-original-title="Reorder"><i class="fa fa-shopping-cart"></i></a>
-									<a class="btn btn-danger" title="" data-toggle="tooltip" href="return.html" data-original-title="Return"><i class="fa fa-reply"></i></a>
+								<td class="text-right"><b>商品原价</b></td>
+								<td class="text-right">￥120.00</td>
+								<td style="white-space: nowrap;" class="text-right"> <a class="btn btn-primary" title="" data-toggle="tooltip" href="cart.html" data-original-title="查看购物车"><i class="fa fa-shopping-cart"></i></a>
+									<a class="btn btn-danger" title="" data-toggle="tooltip" href="return.html" data-original-title="退货"><i class="fa fa-reply"></i></a>
 								</td>
 							</tr>
 
@@ -1111,67 +1112,60 @@
 						<tfoot>
 							<tr>
 								<td colspan="3"></td>
-								<td class="text-right"><b>Sub-Total</b>
+								<td class="text-right"><b>折后价格</b>
 								</td>
-								<td class="text-right">$101.00</td>
+								<td class="text-right">￥100.00</td>
 								<td></td>
 							</tr>
 							<tr>
 								<td colspan="3"></td>
-								<td class="text-right"><b>Flat Shipping Rate</b>
+								<td class="text-right"><b>优惠</b>
 								</td>
-								<td class="text-right">$5.00</td>
+								<td class="text-right">-￥20.00</td>
 								<td></td>
 							</tr>
 							<tr>
 								<td colspan="3"></td>
-								<td class="text-right"><b>Eco Tax (-2.00)</b>
+								<td class="text-right"><b>配送费</b>
 								</td>
-								<td class="text-right">$6.00</td>
+								<td class="text-right">￥12.00</td>
 								<td></td>
 							</tr>
 							<tr>
 								<td colspan="3"></td>
-								<td class="text-right"><b>VAT (20%)</b>
+								<td class="text-right"><b>总金额</b>
 								</td>
-								<td class="text-right">$21.20</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td colspan="3"></td>
-								<td class="text-right"><b>Total</b>
-								</td>
-								<td class="text-right">$133.20</td>
+								<td class="text-right">￥92.00</td>
 								<td></td>
 							</tr>
 						</tfoot>
 					</table>
 				</div>
-				<h3>Order History</h3>
-				<table class="table table-bordered table-hover">
-					<thead>
-						<tr>
-							<td class="text-left">Date Added</td>
-							<td class="text-left">Status</td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="text-left">20/06/2016</td>
-							<td class="text-left">Processing</td>
-						</tr>
-						<tr>
-							<td class="text-left">21/06/2016</td>
-							<td class="text-left">Shipped</td>
-						</tr>
-						<tr>
-							<td class="text-left">24/06/2016</td>
-							<td class="text-left">Complete</td>
-						</tr>
-					</tbody>
-				</table>
+<!--				<h3>Order History</h3>-->
+<!--				<table class="table table-bordered table-hover">-->
+<!--					<thead>-->
+<!--						<tr>-->
+<!--							<td class="text-left">Date Added</td>-->
+<!--							<td class="text-left">Status</td>-->
+<!--						</tr>-->
+<!--					</thead>-->
+<!--					<tbody>-->
+<!--						<tr>-->
+<!--							<td class="text-left">20/06/2016</td>-->
+<!--							<td class="text-left">Processing</td>-->
+<!--						</tr>-->
+<!--						<tr>-->
+<!--							<td class="text-left">21/06/2016</td>-->
+<!--							<td class="text-left">Shipped</td>-->
+<!--						</tr>-->
+<!--						<tr>-->
+<!--							<td class="text-left">24/06/2016</td>-->
+<!--							<td class="text-left">Complete</td>-->
+<!--						</tr>-->
+<!--					</tbody>-->
+<!--				</table>-->
 				<div class="buttons clearfix">
-					<div class="pull-right"><a class="btn btn-primary" href="#">Continue</a>
+					<div class="pull-right"><a class="btn btn-primary" href="order-history.html">返回</a>
 					</div>
 				</div>
 
@@ -1180,38 +1174,39 @@
 			</div>
 			<!--Middle Part End-->
 			<!--Right Part Start -->
-			<aside class="col-sm-3 hidden-xs content-aside col-md-3" id="column-right">
-				<h2 class="subtitle">Account</h2>
-<div class="list-group">
-	<ul class="list-item">
-		<li><a href="login.html">Login</a>
-		</li>
-		<li><a href="register.html">Register</a>
-		</li>
-		<li><a href="#">Forgotten Password</a>
-		</li>
-		<li><a href="#">My Account</a>
-		</li>
-		<li><a href="#">Address Books</a>
-		</li>
-		<li><a href="wishlist.html">Wish List</a>
-		</li>
-		<li><a href="#">Order History</a>
-		</li>
-		<li><a href="#">Downloads</a>
-		</li>
-		<li><a href="#">Reward Points</a>
-		</li>
-		<li><a href="#">Returns</a>
-		</li>
-		<li><a href="#">Transactions</a>
-		</li>
-		<li><a href="#">Newsletter</a>
-		</li>
-		<li><a href="#">Recurring payments</a>
-		</li>
-	</ul>
-</div>			</aside>
+<!--			<aside class="col-sm-3 hidden-xs content-aside col-md-3" id="column-right">-->
+<!--				<h2 class="subtitle">Account</h2>-->
+<!--                    <div class="list-group">-->
+<!--                        <ul class="list-item">-->
+<!--                            <li><a href="login.html">Login</a>-->
+<!--                            </li>-->
+<!--                            <li><a href="register.html">Register</a>-->
+<!--                            </li>-->
+<!--                            <li><a href="#">Forgotten Password</a>-->
+<!--                            </li>-->
+<!--                            <li><a href="#">My Account</a>-->
+<!--                            </li>-->
+<!--                            <li><a href="#">Address Books</a>-->
+<!--                            </li>-->
+<!--                            <li><a href="wishlist.html">Wish List</a>-->
+<!--                            </li>-->
+<!--                            <li><a href="#">Order History</a>-->
+<!--                            </li>-->
+<!--                            <li><a href="#">Downloads</a>-->
+<!--                            </li>-->
+<!--                            <li><a href="#">Reward Points</a>-->
+<!--                            </li>-->
+<!--                            <li><a href="#">Returns</a>-->
+<!--                            </li>-->
+<!--                            <li><a href="#">Transactions</a>-->
+<!--                            </li>-->
+<!--                            <li><a href="#">Newsletter</a>-->
+<!--                            </li>-->
+<!--                            <li><a href="#">Recurring payments</a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>			-->
+<!--            </aside>-->
 			<!--Right Part End -->
 		</div>
 	</div>
