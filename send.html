@@ -30,7 +30,6 @@
     <link href="css/themecss/lib.css" rel="stylesheet">
     <link href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
     <link href="js/minicolors/miniColors.css" rel="stylesheet">
-    <link href="css/self/button_style.css" rel="stylesheet">
 
     <!-- Theme CSS
     ============================================ -->
@@ -55,7 +54,8 @@
 
 </head>
 
-<body class="res layout-1 layout-subpage">
+<body class="res layout-1">
+
 
 <div id="wrapper" class="wrapper-fluid banners-effect-5">
 
@@ -181,11 +181,11 @@
                                         <div class="shopcart-inner">
                                             <p class="text-shopping-cart">
 
-                                                我收到的订单
+                                                我的购物车
                                             </p>
 
                                             <span class="total-shopping-cart cart-total-full">
-                           <span class="items_cart">01</span><span class="items_cart2"> item(s)</span><span class="items_carts">( 现 1条 )</span>
+                           <span class="items_cart">02</span><span class="items_cart2"> item(s)</span><span class="items_carts">( ￥140.00 )</span>
                                     </span>
                                         </div>
                                     </div>
@@ -198,22 +198,71 @@
                                             <tr>
                                                 <td class="text-center" style="width:70px">
                                                     <a href="product.html">
-                                                        <img src="image/catalog/demo/product/fashion/10.jpg" style="width:70px" alt="Yutculpa ullamcon" title="Yutculpa ullamco" class="preview">
+                                                        <img src="image/catalog/demo/product/80/1.jpg" style="width:70px" alt="Yutculpa ullamcon" title="Yutculpa ullamco" class="preview">
                                                     </a>
                                                 </td>
-                                                <td class="text-left"> <a class="cart_product_name" href="product.html">水钻鞋</a>
+                                                <td class="text-left"> <a class="cart_product_name" href="product.html">秋季必备女式橄榄绿衬衣</a>
                                                 </td>
                                                 <td class="text-center">x1</td>
-                                                <td class="text-center">￥180.00</td>
-                                                <td class="text-center">来源：阿玛尼正品女鞋</td>
+                                                <td class="text-center">￥80.00</td>
+                                                <td class="text-right">
+                                                    <a href="product.html" class="fa fa-edit"></a>
+                                                </td>
                                                 <td class="text-right">
                                                     <a onclick="cart.remove('2');" class="fa fa-times fa-delete"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center" style="width:70px">
+                                                    <a href="product.html">
+                                                        <img src="image/catalog/demo/product/80/2.jpg" style="width:70px" alt="Xancetta bresao" title="Xancetta bresao" class="preview">
+                                                    </a>
+                                                </td>
+                                                <td class="text-left"> <a class="cart_product_name" href="product.html">舒适宽版针织衫红</a>
+                                                </td>
+                                                <td class="text-center">x1</td>
+                                                <td class="text-center">￥60.00</td>
+                                                <td class="text-right">
+                                                    <a href="product.html" class="fa fa-edit"></a>
+                                                </td>
+                                                <td class="text-right">
+                                                    <a onclick="cart.remove('1');" class="fa fa-times fa-delete"></a>
                                                 </td>
                                             </tr>
                                             </tbody>
                                         </table>
                                     </li>
-
+                                    <li>
+                                        <div>
+                                            <table class="table table-bordered">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="text-left"><strong>商品总价</strong>
+                                                    </td>
+                                                    <td class="text-right">￥140.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left"><strong>运费</strong>
+                                                    </td>
+                                                    <td class="text-right">￥12.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left"><strong>优惠</strong>
+                                                    </td>
+                                                    <td class="text-right">￥-12.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left"><strong>总价</strong>
+                                                    </td>
+                                                    <td class="text-right">￥140.00</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="text-center"> <a class="btn view-cart" href="cart.html"><i class="fa fa-shopping-cart"></i> 购物车</a>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <a class="btn btn-mega checkout-cart" href="checkout.html"><i class="fa fa-share"></i> 支付</a>
+                                            </p>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
 
@@ -965,8 +1014,8 @@
                     <div class="bottom3">
                         <div class="telephone hidden-xs hidden-sm hidden-md">
                             <ul class="blank">
-                                <li><a href="#"><i class="fa fa-truck"></i>订单跟踪</a></li>
-                                <li><a href="#"><i class="fa fa-phone-square"></i>客服热线 18021068918</a></li>
+                                <li><a href="order-history.html"><i class="fa fa-truck"></i>订单跟踪</a></li>
+                                <li><a href="about-us.html"><i class="fa fa-phone-square"></i>联系我们 18021068918</a></li>
                             </ul>
                         </div>
                         <div class="signin-w hidden-md hidden-sm hidden-xs">
@@ -983,71 +1032,105 @@
     </header>
     <!-- //Header Container  -->
 
-
     <!-- Main Container  -->
     <div class="main-container container">
-        <div id="content" class="col-sm-12">
-            <h2 class="title">仓库库存</h2>
-            <div class="table-responsive form-group">
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <td class="text-center">图片</td>
-                        <td class="text-left">商品名</td>
-                        <td class="text-left">型号</td>
-                        <td class="text-left">出库数量</td>
-                        <td class="text-left">入库数量</td>
-                        <td class="text-center">库存数量</td>
-                        <td class="text-center">一键发货</td>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td class="text-center"><a href="product.html"><img width="70px" src="image/catalog/demo/product/fashion/8.jpg" alt="Aspire Ultrabook Laptop" title="Aspire Ultrabook Laptop" class="img-thumbnail" /></a></td>
-                        <td class="text-left"><a href="product.html">红鞋</a><br />
-                        </td>
-                        <td class="text-left">Pt 001</td>
-                        <td class="text-left" width="200px"><div class="input-group btn-block quantity">
-                            <input  id="reset1" type="text" name="quantity" value="0" size="1" class="form-control" />
-                            <span class="input-group-btn">
-                        <button  type="button" data-toggle="tooltip" title="Update" class="btn btn-primary" onclick="out1()"><i class="fa fa-clone"></i></button>
-                        <button  type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick="supplier_reset1()"><i class="fa fa-times-circle"></i></button>
-                        </span></div></td>
-                        <td class="text-left" width="200px"><div class="input-group btn-block quantity">
-                            <input id="reset2" type="text" name="quantity" value="0" size="1" class="form-control" />
-                            <span class="input-group-btn">
-                        <button type="button" data-toggle="tooltip" title="Update" class="btn btn-primary" onclick="in1()"><i class="fa fa-clone"></i></button>
-                        <button type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick="supplier_reset2()"><i class="fa fa-times-circle"></i></button>
-                        </span></div></td>
-                        <td id="storage1" class="text-center"></td>
-                        <td align="center"><a href="send.html"><button type="button" class="btn_send" title="点击对此商品发货" >发货</button></a></td>
-                    </tr>
-                    <tr>
-                        <td class="text-center"><a href="product.html"><img width="70px" src="image/catalog/demo/product/fashion/10.jpg" alt="Xitefun Causal Wear Fancy Shoes" title="Xitefun Causal Wear Fancy Shoes" class="img-thumbnail" /></a></td>
-                        <td class="text-left"><a href="product.html">水钻鞋</a></td>
-                        <td class="text-left">Pt 002</td>
-                        <td class="text-left" width="200px"><div class="input-group btn-block quantity">
-                            <input id="reset3" type="text" name="quantity" value="0" size="1" class="form-control" />
-                            <span class="input-group-btn">
-                        <button type="button" data-toggle="tooltip" title="Update" class="btn btn-primary" onclick="out2()"><i class="fa fa-clone"></i></button>
-                        <button type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick="supplier_reset3()"><i class="fa fa-times-circle"></i></button>
-                        </span></div></td>
-                        <td class="text-left" width="200px"><div class="input-group btn-block quantity">
-                            <input id="reset4" type="text" name="quantity" value="0" size="1" class="form-control" />
-                            <span class="input-group-btn">
-                        <button type="button" data-toggle="tooltip" title="Update" class="btn btn-primary" onclick="in2()"><i class="fa fa-clone"></i></button>
-                        <button type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick="supplier_reset4()"><i class="fa fa-times-circle"></i></button>
-                        </span></div></td>
-                        <td id="storage2" class="text-center"></td>
-                        <td align="center"><a href="send.html"><button type="button" class="btn_send" title="点击对此商品发货" >发货</button></a></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+        <ul class="breadcrumb">
+            <li><a href="#"><i class="fa fa-home"></i></a></li>
+            <li><a href="#">发货</a></li>
 
+        </ul>
+
+        <div class="row">
+            <!--Middle Part Start-->
+            <div id="content" class="col-sm-12">
+                <h2 class="title">发货</h2>
+
+                            <div class="col-sm-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><i class="fa fa-shopping-cart"></i> 发货单</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                <tr>
+                                                    <td class="text-center">图片</td>
+                                                    <td class="text-left">商品名</td>
+                                                    <td class="text-left">数量</td>
+                                                    <td class="text-right">产地</td>
+                                                    <td class="text-right">总金额</td>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="text-center"><a href="product.html"><img width="60px" src="image/catalog/demo/product/fashion/10.jpg" alt="Xitefun Causal Wear Fancy Shoes" title="Xitefun Causal Wear Fancy Shoes" class="img-thumbnail"></a></td>
+                                                    <td class="text-left"><a href="product.html">水钻鞋</a></td>
+                                                    <td class="text-left"><div class="input-group btn-block" style="min-width: 100px;">
+                                                        <input type="text" name="quantity" value="1" size="1" class="form-control">
+                                                        <span class="input-group-btn">
+										<button type="submit" data-toggle="tooltip" title="Update" class="btn btn-primary"><i class="fa fa-refresh"></i></button>
+										<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick=""><i class="fa fa-times-circle"></i></button>
+										</span></div></td>
+                                                    <td class="text-right">越南</td>
+                                                    <td class="text-right">￥180</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                                <table class="table table-bordered">
+                                                <tfoot>
+                                                <tr>
+                                                    <td class="text-center" colspan="4"><strong>订单号</strong></td>
+                                                    <td class="text-center">D7823782173</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center" colspan="4"><strong>货品商店</strong></td>
+                                                    <td class="text-center">阿尼玛正品女鞋</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center" colspan="4"><strong>下单时间</strong></td>
+                                                    <td class="text-center">2019-06-19 20:21</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center" colspan="4"><strong>顾客地址</strong></td>
+                                                    <td class="text-center">上海市宝山区松青路99号</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center" colspan="4"><strong>快递公司</strong></td>
+                                                    <td class="text-center">顺丰快递</td>
+                                                </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><i class="fa fa-pencil"></i> 在这写下对此发货单的备注</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <textarea rows="4" class="form-control" id="confirm_comment" name="comments"></textarea>
+                                        <br>
+
+                                        <div class="buttons">
+                                            <div class="pull-right">
+                                                <input type="button" class="btn btn-primary" id="button-confirm" value="确定发货">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Middle Part End -->
+
+        </div>
     </div>
     <!-- //Main Container -->
-
 
     <!-- Footer Container -->
     <footer class="footer-container typefooter-1">
@@ -1247,21 +1330,6 @@
                 </div>
             </div>
         </div>
-        <!-- Footer Bottom Container -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="col-lg-12 col-xs-12 payment-w">
-                    <img src="image/catalog/demo/payment/payment.png" alt="imgpayment">
-                </div>
-            </div>
-            <div class="copyright-w">
-                <div class="container">
-                    <div class="copyright">
-                        SuperMarket © 2018 Demo Store. All Rights Reserved. Designed by <a href="../../../../../www.bootstrapmb.com/default.htm" target="_blank">OpenCartWorks.Com</a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- /Footer Bottom Container -->
 
 
@@ -1271,6 +1339,8 @@
     <!-- //end Footer Container -->
 
 </div>
+
+
 
 <!-- Include Libs & Plugins
 	============================================ -->
@@ -1286,7 +1356,6 @@
 <script type="text/javascript" src="js/datetimepicker/moment.js"></script>
 <script type="text/javascript" src="js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/self_js/supplier.js"></script>
 
 
 <!-- Theme files
@@ -1297,7 +1366,5 @@
 <script type="text/javascript" src="js/themejs/addtocart.js"></script>
 <script type="text/javascript" src="js/themejs/application.js"></script>
 
-
-</div>
 </body>
 </html>
