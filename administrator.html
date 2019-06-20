@@ -30,7 +30,6 @@
     <link href="css/themecss/lib.css" rel="stylesheet">
     <link href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
     <link href="js/minicolors/miniColors.css" rel="stylesheet">
-    <link href="css/self/button_style.css" rel="stylesheet">
 
     <!-- Theme CSS
     ============================================ -->
@@ -50,12 +49,12 @@
    ============================================ -->
     <link href='../../../../../https@fonts.googleapis.com/css@family=Poppins_3A300,400,500,600,700' rel='stylesheet' type='text/css'>
     <style type="text/css">
-         body{font-family:'Poppins', sans-serif;}
+        body{font-family:'Poppins', sans-serif;}
     </style>
 
 </head>
 
-<body class="res layout-1 layout-subpage">
+<body class="res layout-1">
 
 <div id="wrapper" class="wrapper-fluid banners-effect-5">
 
@@ -181,11 +180,11 @@
                                         <div class="shopcart-inner">
                                             <p class="text-shopping-cart">
 
-                                                我收到的订单
+                                                我的购物车
                                             </p>
 
                                             <span class="total-shopping-cart cart-total-full">
-                           <span class="items_cart">01</span><span class="items_cart2"> item(s)</span><span class="items_carts">( 现 1条 )</span>
+                           <span class="items_cart">02</span><span class="items_cart2"> item(s)</span><span class="items_carts">( ￥140.00 )</span>
                                     </span>
                                         </div>
                                     </div>
@@ -198,22 +197,71 @@
                                             <tr>
                                                 <td class="text-center" style="width:70px">
                                                     <a href="product.html">
-                                                        <img src="image/catalog/demo/product/fashion/10.jpg" style="width:70px" alt="Yutculpa ullamcon" title="Yutculpa ullamco" class="preview">
+                                                        <img src="image/catalog/demo/product/80/1.jpg" style="width:70px" alt="Yutculpa ullamcon" title="Yutculpa ullamco" class="preview">
                                                     </a>
                                                 </td>
-                                                <td class="text-left"> <a class="cart_product_name" href="product.html">水钻鞋</a>
+                                                <td class="text-left"> <a class="cart_product_name" href="product.html">秋季必备女式橄榄绿衬衣</a>
                                                 </td>
                                                 <td class="text-center">x1</td>
-                                                <td class="text-center">￥180.00</td>
-                                                <td class="text-center">来源：阿玛尼正品女鞋</td>
+                                                <td class="text-center">￥80.00</td>
+                                                <td class="text-right">
+                                                    <a href="product.html" class="fa fa-edit"></a>
+                                                </td>
                                                 <td class="text-right">
                                                     <a onclick="cart.remove('2');" class="fa fa-times fa-delete"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center" style="width:70px">
+                                                    <a href="product.html">
+                                                        <img src="image/catalog/demo/product/80/2.jpg" style="width:70px" alt="Xancetta bresao" title="Xancetta bresao" class="preview">
+                                                    </a>
+                                                </td>
+                                                <td class="text-left"> <a class="cart_product_name" href="product.html">舒适宽版针织衫红</a>
+                                                </td>
+                                                <td class="text-center">x1</td>
+                                                <td class="text-center">￥60.00</td>
+                                                <td class="text-right">
+                                                    <a href="product.html" class="fa fa-edit"></a>
+                                                </td>
+                                                <td class="text-right">
+                                                    <a onclick="cart.remove('1');" class="fa fa-times fa-delete"></a>
                                                 </td>
                                             </tr>
                                             </tbody>
                                         </table>
                                     </li>
-
+                                    <li>
+                                        <div>
+                                            <table class="table table-bordered">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="text-left"><strong>商品总价</strong>
+                                                    </td>
+                                                    <td class="text-right">￥140.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left"><strong>运费</strong>
+                                                    </td>
+                                                    <td class="text-right">￥12.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left"><strong>优惠</strong>
+                                                    </td>
+                                                    <td class="text-right">￥-12.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left"><strong>总价</strong>
+                                                    </td>
+                                                    <td class="text-right">￥140.00</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="text-center"> <a class="btn view-cart" href="cart.html"><i class="fa fa-shopping-cart"></i> 购物车</a>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <a class="btn btn-mega checkout-cart" href="checkout.html"><i class="fa fa-share"></i> 支付</a>
+                                            </p>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
 
@@ -221,9 +269,9 @@
                         <!--//cart-->
 
                         <ul class="wishlist-comp hidden-md hidden-sm hidden-xs">
-                            <li class="compare hidden-xs"><a href="compare.html" class="top-link-compare" title="商品比较"><i class="fa fa-refresh"></i></a>
+                            <li class="compare hidden-xs"><a href="#" class="top-link-compare" title="Compare "><i class="fa fa-refresh"></i></a>
                             </li>
-                            <li class="wishlist hidden-xs"><a href="wishlist.html" id="wishlist-total" class="top-link-wishlist" title="心愿单"><i class="fa fa-heart"></i></a>
+                            <li class="wishlist hidden-xs"><a href="#" id="wishlist-total" class="top-link-wishlist" title="Wish List (0) "><i class="fa fa-heart"></i></a>
                             </li>
                         </ul>
 
@@ -965,8 +1013,8 @@
                     <div class="bottom3">
                         <div class="telephone hidden-xs hidden-sm hidden-md">
                             <ul class="blank">
-                                <li><a href="#"><i class="fa fa-truck"></i>订单跟踪</a></li>
-                                <li><a href="#"><i class="fa fa-phone-square"></i>客服热线 18021068918</a></li>
+                                <li><a href="order-history.html"><i class="fa fa-truck"></i>订单跟踪</a></li>
+                                <li><a href="about-us.html"><i class="fa fa-phone-square"></i>联系我们 18021068918</a></li>
                             </ul>
                         </div>
                         <div class="signin-w hidden-md hidden-sm hidden-xs">
@@ -985,69 +1033,210 @@
 
 
     <!-- Main Container  -->
-    <div class="main-container container">
-        <div id="content" class="col-sm-12">
-            <h2 class="title">仓库库存</h2>
-            <div class="table-responsive form-group">
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <td class="text-center">图片</td>
-                        <td class="text-left">商品名</td>
-                        <td class="text-left">型号</td>
-                        <td class="text-left">出库数量</td>
-                        <td class="text-left">入库数量</td>
-                        <td class="text-center">库存数量</td>
-                        <td class="text-center">一键发货</td>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td class="text-center"><a href="product.html"><img width="70px" src="image/catalog/demo/product/fashion/8.jpg" alt="Aspire Ultrabook Laptop" title="Aspire Ultrabook Laptop" class="img-thumbnail" /></a></td>
-                        <td class="text-left"><a href="product.html">红鞋</a><br />
-                        </td>
-                        <td class="text-left">Pt 001</td>
-                        <td class="text-left" width="200px"><div class="input-group btn-block quantity">
-                            <input  id="reset1" type="text" name="quantity" value="0" size="1" class="form-control" />
-                            <span class="input-group-btn">
-                        <button  type="button" data-toggle="tooltip" title="Update" class="btn btn-primary" onclick="out1()"><i class="fa fa-clone"></i></button>
-                        <button  type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick="supplier_reset1()"><i class="fa fa-times-circle"></i></button>
-                        </span></div></td>
-                        <td class="text-left" width="200px"><div class="input-group btn-block quantity">
-                            <input id="reset2" type="text" name="quantity" value="0" size="1" class="form-control" />
-                            <span class="input-group-btn">
-                        <button type="button" data-toggle="tooltip" title="Update" class="btn btn-primary" onclick="in1()"><i class="fa fa-clone"></i></button>
-                        <button type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick="supplier_reset2()"><i class="fa fa-times-circle"></i></button>
-                        </span></div></td>
-                        <td id="storage1" class="text-center"></td>
-                        <td align="center"><a href="send.html"><button type="button" class="btn_send" title="点击对此商品发货" >发货</button></a></td>
-                    </tr>
-                    <tr>
-                        <td class="text-center"><a href="product.html"><img width="70px" src="image/catalog/demo/product/fashion/10.jpg" alt="Xitefun Causal Wear Fancy Shoes" title="Xitefun Causal Wear Fancy Shoes" class="img-thumbnail" /></a></td>
-                        <td class="text-left"><a href="product.html">水钻鞋</a></td>
-                        <td class="text-left">Pt 002</td>
-                        <td class="text-left" width="200px"><div class="input-group btn-block quantity">
-                            <input id="reset3" type="text" name="quantity" value="0" size="1" class="form-control" />
-                            <span class="input-group-btn">
-                        <button type="button" data-toggle="tooltip" title="Update" class="btn btn-primary" onclick="out2()"><i class="fa fa-clone"></i></button>
-                        <button type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick="supplier_reset3()"><i class="fa fa-times-circle"></i></button>
-                        </span></div></td>
-                        <td class="text-left" width="200px"><div class="input-group btn-block quantity">
-                            <input id="reset4" type="text" name="quantity" value="0" size="1" class="form-control" />
-                            <span class="input-group-btn">
-                        <button type="button" data-toggle="tooltip" title="Update" class="btn btn-primary" onclick="in2()"><i class="fa fa-clone"></i></button>
-                        <button type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick="supplier_reset4()"><i class="fa fa-times-circle"></i></button>
-                        </span></div></td>
-                        <td id="storage2" class="text-center"></td>
-                        <td align="center"><a href="send.html"><button type="button" class="btn_send" title="点击对此商品发货" >发货</button></a></td>
-                    </tr>
-                    </tbody>
-                </table>
+    <div class="main-container container" style="height:600px">
+    <h2 class="title">欢迎管理员登录[<a href="login.html">退出</a>]</h2>
+
+    <aside class="col-sm-4 col-md-3 content-aside" id="column-left">
+        <div class="module category-style">
+            <h3 class="modtitle">管理员操作</h3>
+            <div class="modcontent">
+                <div class="box-category">
+                    <ul id="cat_accordion" class="list-group">
+                        <li class="hadchild"><a href="#" class="cutom-parent">用户管理</a>   <span class="button-view  fa fa-plus-square-o"></span>
+                            <ul style="display: block;">
+                                <li><a href="#">用户信息管理</a></li>
+                                <li><a href="#">角色管理</a></li>
+                                <li><a href="#">权限管理</a></li>
+                                <li><a href="#">黑名单</a></li>
+                            </ul>
+                        </li>
+                        <li class="hadchild"><a class="cutom-parent" href="#">报表管理</a>   <span class="button-view  fa fa-plus-square-o"></span>
+                            <ul style="display: none;">
+                                <li><a href="#">用户注册统计</a></li>
+                                <li><a href="#">低库存汇总</a></li>
+                                <li><a href="#">缺货订单</a></li>
+                                <li><a href="#">订单汇总</a></li>
+                                <li><a href="#">退换货</a></li>
+                            </ul>
+                        </li>
+                        <li class="hadchild"><a href="#" class="cutom-parent">系统管理</a>   <span class="button-view  fa fa-plus-square-o"></span>
+                            <ul style="display: none;">
+                                <li><a href="#">安全管理</a></li>
+                                <li><a href="#">系统属性</a></li>
+                                <li><a href="#">支付管理</a></li>
+                                <li><a href="#">数据导入管理</a></li>
+                            </ul>
+                        </li>
+                        <li class="hadchild"><a href="#" class="cutom-parent">订单管理</a>  <span class="button-view  fa fa-plus-square-o"></span>
+                            <ul style="display: none;">
+                                <li><a href="#">异常订单处理</a></li>
+                                <li><a href="#">投诉订单处理</a></li>
+                                <li><a href="#">结算</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="#" class="cutom-parent">促销管理</a>  <span class="dcjq-icon"></span></li>
+                        <li class=""><a href="#" class="cutom-parent">推荐管理</a>    <span class="dcjq-icon"></span></li>
+                        <li class=""><a href="#" class="cutom-parent">内容管理</a>  <span class="dcjq-icon"></span></li>
+                        <li class=""><a href="#" class="cutom-parent">广告管理</a><span class="dcjq-icon"></span></li>
+                    </ul>
+                </div>
+
+
             </div>
+        </div>
+    </aside>
+        <div class="col-sm-4 right1"style="float:left ; width:60%; height:100%;">
+            <fieldset>
+                <legend>权限管理</legend>
+                <style type="text/css">
+     ul>li{
+         list-style: none;
+     }
+       /* 可展开*/
+      .switch-open
+      {
+          margin-left:-12px;
+          border:6px solid transparent;
+          display:inline-block;
+          width:0px;
+          height:0px;
+          border-top-color: black;
 
+      }
+       /* 展开完毕*/
+     .switch-close
+     {
+         margin-left:-12px;
+         border:6px solid transparent;
+         display:inline-block;
+         width:0px;
+         height:0px;
+         border-left-color: black;
+         margin-bottom: 2px;
+
+     }
+       /* 改变CheckBox样式*/
+     input[type='checkbox']{
+         width: 20px;
+         height: 20px;
+
+         -webkit-appearance:none;
+         -moz-appearance: none;
+         border: 1px solid #c9c9c9;
+         border-radius: 3px;
+         outline: none;
+         color:white;
+         text-align: center;
+     }
+     input[type='checkbox']:before
+     {
+         content: '√ ';
+         color:transparent;
+     }
+     input[type=checkbox]:checked{
+         background-color: #30add6;
+     }
+     input[type=checkbox]:checked:before{
+         content: '√';
+         color:white;
+         font-weight: bold;
+     }
+
+
+    </style>
+                </head>
+                <body>
+                <div class="warp">
+                    <ul id="container">
+                    </ul>
+                </div>
+
+
+                <script type="text/javascript">
+
+    //结构
+    var json={
+        '0-0':{
+            '0-0-0':null,
+            '0-0-1':{
+                '0-0-1-0':null,
+                '0-0-1-1':null,
+                '0-0-1-2':null
+            },
+            '0-0-2':null
+        },
+        '0-1':{
+            '0-1-0':null,
+            '0-1-1':null
+        },
+        '0-2':null
+    };
+
+//这里生成DOM
+    function generate(json,par)
+    {
+        for(var attr in json)
+        {
+            var ele=document.createElement('li');
+            if(!json[attr])
+                ele.innerHTML=' <input type="checkbox"></input>'+attr;
+            else
+            {
+                ele.innerHTML='<span><span class="switch-open" onclick="toggle(this)"></span><input type="checkbox" onclick="checkChange(this)"></input>'+attr+'</span>';
+                var nextpar=document.createElement('ul');
+                ele.appendChild(nextpar);
+                generate(json[attr],nextpar);
+            }
+            par.appendChild(ele);
+        }
+    }
+    generate(json,document.getElementById('container'));
+
+    //处理展开和收起
+function toggle(eve)
+{
+    var par=eve.parentNode.nextElementSibling;
+    if(par.style.display=='none')
+    {
+        par.style.display='block';
+        eve.className='switch-open';
+
+    }
+    else
+    {
+        par.style.display='none';
+        eve.className='switch-close';
+    }
+}
+
+//处理全部勾选和全部不选
+    function checkChange(eve)
+    {
+        var oul=eve.parentNode.nextElementSibling;
+        if(eve.checked)
+        {
+                for(var i=0;i<oul.querySelectorAll('input').length;i++)
+                {
+                    oul.querySelectorAll('input')[i].checked=true;
+                }
+        }
+        else
+        {
+            for(var i=0;i<oul.querySelectorAll('input').length;i++)
+            {
+                oul.querySelectorAll('input')[i].checked=false;
+            }
+        }
+    }
+</script>
+                </body>
+            </fieldset>
+
+            </div>
+        </div>
     </div>
-    <!-- //Main Container -->
 
+    <!-- //Main Container -->
 
     <!-- Footer Container -->
     <footer class="footer-container typefooter-1">
@@ -1272,6 +1461,7 @@
 
 </div>
 
+
 <!-- Include Libs & Plugins
 	============================================ -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -1286,7 +1476,6 @@
 <script type="text/javascript" src="js/datetimepicker/moment.js"></script>
 <script type="text/javascript" src="js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/self_js/supplier.js"></script>
 
 
 <!-- Theme files
@@ -1298,6 +1487,5 @@
 <script type="text/javascript" src="js/themejs/application.js"></script>
 
 
-</div>
 </body>
 </html>
